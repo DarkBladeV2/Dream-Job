@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Dream Job</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DreamJob</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="success-stories.html">Success Stories</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="jobs">
+            <div class="job" onclick="openModal('Pilot', 'High salary, travel perks, retirement benefits, health insurance, paid time off, and bonuses based on performance.', 'Complete a flight training program, obtain a commercial pilot license, and gain experience through regional airlines.')">
+                <i class="fas fa-plane"></i>
+                <h2>Pilot</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">High salary, travel perks, retirement benefits, health insurance, paid time off, and bonuses based on performance.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Sense of adventure, responsibility, leadership skills, global exposure, personal growth, and the opportunity to see the world from a unique perspective.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Software Engineer', 'Competitive salary, stock options, bonuses, health insurance, retirement plans, and opportunities for career advancement.', 'Earn a degree in computer science, gain experience through internships, and build a strong portfolio of projects.')">
+                <i class="fas fa-laptop-code"></i>
+                <h2>Software Engineer</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Competitive salary, stock options, bonuses, health insurance, retirement plans, and opportunities for career advancement.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Problem-solving, innovation, creativity, continuous learning, the ability to work on cutting-edge technology, and the satisfaction of building products that impact millions of people.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Doctor', 'High salary, job security, health insurance, retirement benefits, malpractice insurance, and opportunities for private practice.', 'Complete a medical degree, pass licensing exams, and complete a residency program.')">
+                <i class="fas fa-stethoscope"></i>
+                <h2>Doctor</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">High salary, job security, health insurance, retirement benefits, malpractice insurance, and opportunities for private practice.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Helping others, saving lives, community respect, personal fulfillment, the ability to make a significant impact on patients' lives, and continuous professional development.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Teacher', 'Stable salary, health insurance, retirement benefits, paid time off, and opportunities for professional development.', 'Earn a degree in education, complete a teacher preparation program, and obtain a teaching license.')">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Teacher</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Stable salary, health insurance, retirement benefits, paid time off, and opportunities for professional development.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Making a difference in students' lives, personal fulfillment, continuous learning, and the opportunity to inspire and educate the next generation.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Lawyer', 'High salary, bonuses, health insurance, retirement benefits, and opportunities for career advancement.', 'Earn a law degree, pass the bar exam, and gain experience through internships or clerkships.')">
+                <i class="fas fa-gavel"></i>
+                <h2>Lawyer</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">High salary, bonuses, health insurance, retirement benefits, and opportunities for career advancement.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Helping others, advocating for justice, personal fulfillment, and the opportunity to make a significant impact on clients' lives.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Business Analyst', 'Competitive salary, bonuses, health insurance, retirement plans, and opportunities for career growth.', 'Earn a degree in business or a related field, gain experience through internships, and develop strong analytical skills.')">
+                <i class="fas fa-briefcase"></i>
+                <h2>Business Analyst</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Competitive salary, bonuses, health insurance, retirement plans, and opportunities for career growth.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Problem-solving, strategic thinking, continuous learning, and the satisfaction of improving business processes and outcomes.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Graphic Designer', 'Competitive salary, freelance opportunities, health insurance, and opportunities for career advancement.', 'Earn a degree in graphic design or a related field, build a strong portfolio, and gain experience through internships or freelance work.')">
+                <i class="fas fa-paint-brush"></i>
+                <h2>Graphic Designer</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Competitive salary, freelance opportunities, health insurance, and opportunities for career advancement.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Creativity, artistic expression, personal fulfillment, and the opportunity to work on diverse and exciting projects.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Photographer', 'Freelance opportunities, competitive rates, and the potential for high earnings through various photography services.', 'Develop strong photography skills, build a portfolio, and gain experience through freelance work or internships.')">
+                <i class="fas fa-camera"></i>
+                <h2>Photographer</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Freelance opportunities, competitive rates, and the potential for high earnings through various photography services.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Creativity, artistic expression, personal fulfillment, and the opportunity to capture and preserve special moments.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Chef', 'Competitive salary, health insurance, retirement benefits, and opportunities for career advancement.', 'Complete a culinary arts program, gain experience through internships or apprenticeships, and develop strong culinary skills.')">
+                <i class="fas fa-utensils"></i>
+                <h2>Chef</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Competitive salary, health insurance, retirement benefits, and opportunities for career advancement.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Creativity, culinary expression, personal fulfillment, and the opportunity to delight customers with delicious food.</p>
+                </div>
+            </div>
+            <div class="job" onclick="openModal('Nurse', 'Stable salary, health insurance, retirement benefits, and opportunities for career growth.', 'Complete a nursing program, pass licensing exams, and gain experience through internships or clinical rotations.')">
+                <i class="fas fa-heart"></i>
+                <h2>Nurse</h2>
+                <div class="benefits">
+                    <p class="benefit-title">Financial Benefits</p>
+                    <p class="benefit-detail">Stable salary, health insurance, retirement benefits, and opportunities for career growth.</p>
+                    <p class="benefit-title">Moral Benefits</p>
+                    <p class="benefit-detail">Helping others, personal fulfillment, continuous learning, and the opportunity to make a significant impact on patients' lives.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Dream Job is dedicated to helping you find your ideal career path. Explore various job opportunities and discover the benefits they offer.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy & GDPR</a></li>
+                    <li><a href="#">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>Join our newsletter</h2>
+                <form>
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dream Job. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="jobTitle"></h2>
+            <p id="jobPay"></p>
+            <p id="jobHowToGet"></p>
+        </div>
+    </div>
+
+    <script src="/jobs.js"></script>
+</body>
+</html>

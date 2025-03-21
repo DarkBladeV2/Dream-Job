@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Dream Job</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DreamJob</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="success-stories.html">Success Stories</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="game-container">
+            <button id="startButton" class="btn">Want a challenge?</button>
+            <div id="questionsContainer" class="hidden">
+                <div id="timer">Time left: 5:00</div>
+                <form id="quizForm">
+                    <!-- Questions will be dynamically inserted here -->
+                </form>
+                <button id="submitButton" class="btn hidden">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Dream Job is dedicated to helping you find your ideal career path. Explore various job opportunities and discover the benefits they offer.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy & GDPR</a></li>
+                    <li><a href="#">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>Join our newsletter</h2>
+                <form>
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dream Job. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeResultModal()">&times;</span>
+            <h2 id="resultTitle"></h2>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
